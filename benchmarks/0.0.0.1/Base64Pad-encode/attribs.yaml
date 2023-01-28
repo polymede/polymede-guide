@@ -1,0 +1,8 @@
+app: 0.0.0.1
+arch: aarch64
+ghc: 9.4.4
+node: marvin
+os:
+  build: 22D49
+  name: macOS
+  version: '13.2'
