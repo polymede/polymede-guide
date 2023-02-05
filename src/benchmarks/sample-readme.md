@@ -19,7 +19,7 @@ running macOS 13.2 (22D49).
 | encode-1MB-Base64Pad-ByteLazy  | 481.8 μs |
 | encode-1MB-Base64Pad-ByteShort | 583.7 μs |
 
-See <index.html> for the full breakdown with detailed methodological notes.
+See [index](../../benchmarks/0.0.0.1/Base64Pad-encode/index.html "criterion generated") for the full breakdown with detailed methodological notes.
 
 ## Release Constraints
 
