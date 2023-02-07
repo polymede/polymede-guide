@@ -1,0 +1,40 @@
+name:                polymede-examples
+version:             0.0.0.1
+github:              "cdornan/polymede-examples"
+license:             BSD3
+author:              "Chris Dornan"
+maintainer:          "chris@chrisdornan.com"
+copyright:           "2023 Chris Dornan"
+
+extra-source-files:
+- README.md
+- changelog.md
+
+# Metadata used when publishing your package
+synopsis:            polymede example programs
+category:            data
+language:            Haskell2010
+
+description:         Please see the README on GitHub at <https://github.com/cdornan/polymede-examples#readme>
+
+dependencies:
+- base          >= 4.10 && < 10
+- aeson
+- bytestring
+- polymede
+- text
+- time
+
+ghc-options:
+- -Wall
+
+library:
+  source-dirs:
+  - src
+
+executables:
+  polymede-examples:
+    main:                polymede-examples.hs
+    source-dirs:         app
+    dependencies:
+    - polymede-examples

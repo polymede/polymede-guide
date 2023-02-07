@@ -2,8 +2,7 @@
 
 - [Overview](./overview.md)
 - [Codecs](./codecs.md)
-  - [IdentityBase](codecs/IdentityBase/index.md)
-  - [Base64Pad](codecs/Base64Pad/index.md)
+  - [Base64Pad](./Base64Pad.md)
 - [Notes](./notes.md)
   - [The Six Stream Types](./notes/streams.md)
   - [The Benchmarks](./notes/benchmarks.md)

@@ -1,0 +1,108 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           polymede-examples
+version:        0.0.0.1
+synopsis:       polymede example programs
+description:    Please see the README on GitHub at <https://github.com/cdornan/polymede-examples#readme>
+category:       data
+homepage:       https://github.com/cdornan/polymede-examples#readme
+bug-reports:    https://github.com/cdornan/polymede-examples/issues
+author:         Chris Dornan
+maintainer:     chris@chrisdornan.com
+copyright:      2023 Chris Dornan
+license:        BSD3
+build-type:     Simple
+extra-source-files:
+    README.md
+    changelog.md
+
+source-repository head
+  type: git
+  location: https://github.com/cdornan/polymede-examples
+
+library
+  exposed-modules:
+      PolymedeJSONBase10
+      PolymedeJSONBase16Lower
+      PolymedeJSONBase16Upper
+      PolymedeJSONBase2
+      PolymedeJSONBase256Emoji
+      PolymedeJSONBase32HexNoPadLower
+      PolymedeJSONBase32HexNoPadUpper
+      PolymedeJSONBase32HexPadLower
+      PolymedeJSONBase32HexPadUpper
+      PolymedeJSONBase32NoPadLower
+      PolymedeJSONBase32NoPadUpper
+      PolymedeJSONBase32PadLower
+      PolymedeJSONBase32PadUpper
+      PolymedeJSONBase32z
+      PolymedeJSONBase36Lower
+      PolymedeJSONBase36Upper
+      PolymedeJSONBase58Btc
+      PolymedeJSONBase58Flickr
+      PolymedeJSONBase64NoPad
+      PolymedeJSONBase64Pad
+      PolymedeJSONBase64UrlNoPad
+      PolymedeJSONBase64urlPad
+      PolymedeJSONBase8
+      PolymedeJSONIdentityBase
+      PolymedeJSONProquint
+      PolymedeSimpleBase10
+      PolymedeSimpleBase16Lower
+      PolymedeSimpleBase16Upper
+      PolymedeSimpleBase2
+      PolymedeSimpleBase256Emoji
+      PolymedeSimpleBase32HexNoPadLower
+      PolymedeSimpleBase32HexNoPadUpper
+      PolymedeSimpleBase32HexPadLower
+      PolymedeSimpleBase32HexPadUpper
+      PolymedeSimpleBase32NoPadLower
+      PolymedeSimpleBase32NoPadUpper
+      PolymedeSimpleBase32PadLower
+      PolymedeSimpleBase32PadUpper
+      PolymedeSimpleBase32z
+      PolymedeSimpleBase36Lower
+      PolymedeSimpleBase36Upper
+      PolymedeSimpleBase58Btc
+      PolymedeSimpleBase58Flickr
+      PolymedeSimpleBase64NoPad
+      PolymedeSimpleBase64Pad
+      PolymedeSimpleBase64UrlNoPad
+      PolymedeSimpleBase64urlPad
+      PolymedeSimpleBase8
+      PolymedeSimpleIdentityBase
+      PolymedeSimpleProquint
+  other-modules:
+      Paths_polymede_examples
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      aeson
+    , base >=4.10 && <10
+    , bytestring
+    , polymede
+    , text
+    , time
+  default-language: Haskell2010
+
+executable polymede-examples
+  main-is: polymede-examples.hs
+  other-modules:
+      Paths_polymede_examples
+  hs-source-dirs:
+      app
+  ghc-options: -Wall
+  build-depends:
+      aeson
+    , base >=4.10 && <10
+    , bytestring
+    , polymede
+    , polymede-examples
+    , text
+    , time
+  default-language: Haskell2010

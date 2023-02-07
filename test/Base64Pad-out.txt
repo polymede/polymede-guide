@@ -1,0 +1,647 @@
+running tests v0.0.0.1 tests for Base64Pad
+Base64Pad
+  Base64Pad
+    Multibase
+      reference
+        good
+          <"">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"f">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"f">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"fo">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foo">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foob">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"fooba">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foobar">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+        failing
+          <"MZE==">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+        invalid
+          <"M=eAoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"Me=AoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"M=eAoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"MeAoe=Ao=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"MeAoeA=o=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+        text-decode
+          text-decode-failure: OK
+      byte-roundtrips:         OK (0.02s)
+          ✓ <interactive> passed 100 tests.
+      text-roundtrips:         OK (0.03s)
+          ✓ <interactive> passed 100 tests.
+    MultibaseLazy
+      reference
+        good
+          <"">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"f">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"f">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"fo">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foo">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foob">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"fooba">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foobar">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+        failing
+          <"MZE==">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+        invalid
+          <"M=eAoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"Me=AoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"M=eAoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"MeAoe=Ao=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"MeAoeA=o=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+        text-decode
+          text-decode-failure: OK
+      byte-roundtrips:         OK (0.02s)
+          ✓ <interactive> passed 100 tests.
+      text-roundtrips:         OK (0.03s)
+          ✓ <interactive> passed 100 tests.
+    MultibaseShort
+      reference
+        good
+          <"">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"f">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"f">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"fo">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foo">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foob">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"fooba">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foobar">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+        failing
+          <"MZE==">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+        invalid
+          <"M=eAoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"Me=AoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"M=eAoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"MeAoe=Ao=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"MeAoeA=o=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+        text-decode
+          text-decode-failure: OK
+      byte-roundtrips:         OK (0.01s)
+          ✓ <interactive> passed 100 tests.
+      text-roundtrips:         OK (0.03s)
+          ✓ <interactive> passed 100 tests.
+    MultibaseBytes
+      reference
+        good
+          <"">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"f">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"f">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"fo">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foo">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foob">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"fooba">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foobar">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+        failing
+          <"MZE==">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+        invalid
+          <"M=eAoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"Me=AoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"M=eAoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"MeAoe=Ao=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"MeAoeA=o=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+        text-decode
+          text-decode-failure: OK
+      byte-roundtrips:         OK (0.01s)
+          ✓ <interactive> passed 100 tests.
+      text-roundtrips:         OK (0.03s)
+          ✓ <interactive> passed 100 tests.
+    MultibaseBytesLazy
+      reference
+        good
+          <"">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"f">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"f">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"fo">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foo">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foob">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"fooba">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foobar">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+        failing
+          <"MZE==">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+        invalid
+          <"M=eAoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"Me=AoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"M=eAoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"MeAoe=Ao=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"MeAoeA=o=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+        text-decode
+          text-decode-failure: OK
+      byte-roundtrips:         OK (0.01s)
+          ✓ <interactive> passed 100 tests.
+      text-roundtrips:         OK (0.03s)
+          ✓ <interactive> passed 100 tests.
+    MultibaseBytesShort
+      reference
+        good
+          <"">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"f">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"f">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"fo">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foo">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foob">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"fooba">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+          <"foobar">
+            byte-encode:       OK
+            text-encode:       OK
+            byte-encode_:      OK
+            text-encode_:      OK
+            text-decode:       OK
+            byte-decode:       OK
+            validity:          OK
+            full-check:        OK
+        failing
+          <"MZE==">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+        invalid
+          <"M=eAoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"Me=AoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"M=eAoeAo=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"MeAoe=Ao=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+          <"MeAoeA=o=">
+            decode:            OK
+            validity:          OK
+            full-check:        OK
+        text-decode
+          text-decode-failure: OK
+      byte-roundtrips:         OK (0.01s)
+          ✓ <interactive> passed 100 tests.
+      text-roundtrips:         OK (0.03s)
+          ✓ <interactive> passed 100 tests.
+
+All 510 tests passed (0.28s)
