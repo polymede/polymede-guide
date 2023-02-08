@@ -4,6 +4,7 @@ allow-newer: true
 
 packages:
 - .
-- ../../sj/polymede
+- ../../polymede
+- ../../polymede-types
 
 extra-deps: []

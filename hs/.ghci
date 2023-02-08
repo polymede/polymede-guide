@@ -1,0 +1,18 @@
+:set -Wall
+:set -isrc
+
+:seti -Wno-type-defaults
+
+:seti -XOverloadedStrings -XQuasiQuotes -XRecordWildCards -XOverloadedLists -XTemplateHaskell
+
+:seti -XTypeApplications -XKindSignatures -XFlexibleContexts
+
+:set -fprint-explicit-foralls
+:set +m
+
+:def package   \m -> return $ ":! ghc-pkg --simple-output find-module " ++ m
+:def no-pretty \_ -> return (":set -interactive-print=System.IO.print")
+
+-- green bold lambdas and multiline mode
+:set prompt      "%s \ESC[1;32mλ: \ESC[m"
+:set prompt-cont "\ESC[1;32mλ| \ESC[m"

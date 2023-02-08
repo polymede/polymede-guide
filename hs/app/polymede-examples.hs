@@ -1,9 +1,10 @@
 {-# LANGUAGE Haskell2010                #-}
 {-# LANGUAGE OverloadedStrings          #-}
 
-import           Mb.Types.IsCodec
 import qualified Data.ByteString.Char8        as B
 import qualified Data.ByteString.Lazy.Char8   as LBS
+import           Data.Multibase.Kit
+import           Data.String
 
 import           PolymedeJSONBase64Pad        as Base64Pad
 import           PolymedeSimpleBase64Pad      as Base64Pad
