@@ -6,6 +6,14 @@
 {-# LANGUAGE GeneralisedNewtypeDeriving #-}
 {-# LANGUAGE OverloadedStrings          #-}
 
+-- |
+-- Copyright    : (c) 2023 Chris Dornan
+-- License      : BSD3
+--
+-- Maintainer   : Chris Dornan <chris@chrisdornan.com>
+-- Stability    : stable
+-- Portability  : GHC
+--
 module PolymedeJSONBase64urlPad(polymedeJSON) where
 
 import qualified Data.ByteString.Lazy.Char8   as LBS

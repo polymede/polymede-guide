@@ -1,6 +1,14 @@
 {-# LANGUAGE Haskell2010                #-}
 {-# LANGUAGE OverloadedStrings          #-}
 
+-- |
+-- Copyright    : (c) 2023 Chris Dornan
+-- License      : BSD3
+--
+-- Maintainer   : Chris Dornan <chris@chrisdornan.com>
+-- Stability    : stable
+-- Portability  : GHC
+--
 module PolymedeSimpleBase64UrlNoPad(polymedeSimple) where
 
 import qualified Data.ByteString.Char8                    as B
