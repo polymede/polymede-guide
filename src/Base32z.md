@@ -2,17 +2,17 @@
 
 ## Essential Stats
 
-| essential              | stat                                                                                                  |
-| ---------------------- | ----------------------------------------------------------------------------------------------------- |
-| codec                  | Base32z                                                                                               |
-| codec home page        | [human-oriented base-32 encoding](http://philzimmermann.com/docs/human-oriented-base-32-encoding.txt) |
-| multibase name         | base32z                                                                                               |
-| multibase code         | h                                                                                                     |
-| preferred pipeline     | by                                                                                                    |
-| reference node         | zaphod                                                                                                |
-| time to encode 10KB    | 8.353 μs                                                                                              |
-| time to decode to 10KB | 57.66 μs                                                                                              |
-| 'foobar' encodes to    | "hc3zs6aubqe"                                                                                         |
+| essential               | stat                                                                                                  |
+| ----------------------- | ----------------------------------------------------------------------------------------------------- |
+| codec                   | Base32z                                                                                               |
+| codec home page         | [human-oriented base-32 encoding](http://philzimmermann.com/docs/human-oriented-base-32-encoding.txt) |
+| multibase name          | base32z                                                                                               |
+| multibase code          | h                                                                                                     |
+| preferred pipeline      | by                                                                                                    |
+| reference node          | zaphod                                                                                                |
+| time to encode 10 kB    | 7.500 μs                                                                                              |
+| time to decode to 10 kB | 48.93 μs                                                                                              |
+| 'foobar' encodes to     | "hc3zs6aubqe"                                                                                         |
 
 
 ## Codec Overview
@@ -85,7 +85,7 @@ breakdown, attached notes, etc.
 
 ### Key Results
 
-Compiled with GHC 9.4.4 (aarch64), on the **marvin** reference node running macOS 13.2.1 (22D68):
+Compiled with GHC 9.4.4 (x86_64), on the **zaphod** reference node running macOS 13.2.1 (22D68):
 
 * There are no highlighted benchmarks.
 

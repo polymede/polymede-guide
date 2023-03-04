@@ -2,17 +2,17 @@
 
 ## Essential Stats
 
-| essential              | stat                                                   |
-| ---------------------- | ------------------------------------------------------ |
-| codec                  | Base32NoPadUpper                                       |
-| codec home page        | [multibase](https://github.com/multiformats/multibase) |
-| multibase name         | base32upper                                            |
-| multibase code         | B                                                      |
-| preferred pipeline     | bl                                                     |
-| reference node         | zaphod                                                 |
-| time to encode 10KB    | 9.791 μs                                               |
-| time to decode to 10KB | 15.14 μs                                               |
-| 'foobar' encodes to    | "BMZXW6YTBOI"                                          |
+| essential               | stat                                                   |
+| ----------------------- | ------------------------------------------------------ |
+| codec                   | Base32NoPadUpper                                       |
+| codec home page         | [multibase](https://github.com/multiformats/multibase) |
+| multibase name          | base32upper                                            |
+| multibase code          | B                                                      |
+| preferred pipeline      | bl                                                     |
+| reference node          | zaphod                                                 |
+| time to encode 10 kB    | 6.993 μs                                               |
+| time to decode to 10 kB | 12.96 μs                                               |
+| 'foobar' encodes to     | "BMZXW6YTBOI"                                          |
 
 
 ## Codec Overview
@@ -52,7 +52,7 @@ breakdown, attached notes, etc.
 
 ### Key Results
 
-Compiled with GHC 9.4.4 (aarch64), on the **marvin** reference node running macOS 13.2.1 (22D68):
+Compiled with GHC 9.4.4 (x86_64), on the **zaphod** reference node running macOS 13.2.1 (22D68):
 
 * There are no highlighted benchmarks.
 

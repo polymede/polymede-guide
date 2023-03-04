@@ -2,17 +2,17 @@
 
 ## Essential Stats
 
-| essential              | stat                                               |
-| ---------------------- | -------------------------------------------------- |
-| codec                  | Base16Upper                                        |
-| codec home page        | [RFC 4648](https://www.rfc-editor.org/rfc/rfc4648) |
-| multibase name         | base16upper                                        |
-| multibase code         | F                                                  |
-| preferred pipeline     | bl                                                 |
-| reference node         | zaphod                                             |
-| time to encode 10KB    | 64.18 μs                                           |
-| time to decode to 10KB | 12.67 μs                                           |
-| 'foobar' encodes to    | "F666F6F626172"                                    |
+| essential               | stat                                               |
+| ----------------------- | -------------------------------------------------- |
+| codec                   | Base16Upper                                        |
+| codec home page         | [RFC 4648](https://www.rfc-editor.org/rfc/rfc4648) |
+| multibase name          | base16upper                                        |
+| multibase code          | F                                                  |
+| preferred pipeline      | bl                                                 |
+| reference node          | zaphod                                             |
+| time to encode 10 kB    | 76.67 μs                                           |
+| time to decode to 10 kB | 15.87 μs                                           |
+| 'foobar' encodes to     | "F666F6F626172"                                    |
 
 
 ## Codec Overview
@@ -53,7 +53,7 @@ breakdown, attached notes, etc.
 
 ### Key Results
 
-Compiled with GHC 9.4.4 (aarch64), on the **marvin** reference node running macOS 13.2.1 (22D68):
+Compiled with GHC 9.4.4 (x86_64), on the **zaphod** reference node running macOS 13.2.1 (22D68):
 
 * There are no highlighted benchmarks.
 

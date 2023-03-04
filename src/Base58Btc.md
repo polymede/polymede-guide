@@ -2,17 +2,17 @@
 
 ## Essential Stats
 
-| essential              | stat                                                                                     |
-| ---------------------- | ---------------------------------------------------------------------------------------- |
-| codec                  | Base58Btc                                                                                |
-| codec home page        | [The Base58 Encoding Scheme](https://datatracker.ietf.org/doc/html/draft-msporny-base58) |
-| multibase name         | base58btc                                                                                |
-| multibase code         | z                                                                                        |
-| preferred pipeline     | by                                                                                       |
-| reference node         | zaphod                                                                                   |
-| time to encode 10KB    | ??                                                                                       |
-| time to decode to 10KB | ??                                                                                       |
-| 'foobar' encodes to    | "zt1Zv2yaZ"                                                                              |
+| essential               | stat                                                                                     |
+| ----------------------- | ---------------------------------------------------------------------------------------- |
+| codec                   | Base58Btc                                                                                |
+| codec home page         | [The Base58 Encoding Scheme](https://datatracker.ietf.org/doc/html/draft-msporny-base58) |
+| multibase name          | base58btc                                                                                |
+| multibase code          | z                                                                                        |
+| preferred pipeline      | by                                                                                       |
+| reference node          | zaphod                                                                                   |
+| time to encode 10 kB    | 32.77 ms                                                                                 |
+| time to decode to 10 kB | 33.91 ms                                                                                 |
+| 'foobar' encodes to     | "zt1Zv2yaZ"                                                                              |
 
 
 ## Codec Overview
@@ -113,7 +113,7 @@ breakdown, attached notes, etc.
 
 ### Key Results
 
-Compiled with GHC 9.4.4 (aarch64), on the **marvin** reference node running macOS 13.2.1 (22D68):
+Compiled with GHC 9.4.4 (x86_64), on the **zaphod** reference node running macOS 13.2.1 (22D68):
 
 * There are no highlighted benchmarks.
 

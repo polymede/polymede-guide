@@ -2,17 +2,17 @@
 
 ## Essential Stats
 
-| essential              | stat                                                   |
-| ---------------------- | ------------------------------------------------------ |
-| codec                  | Base256Emoji                                           |
-| codec home page        | [multibase](https://github.com/multiformats/multibase) |
-| multibase name         | base256emoji                                           |
-| multibase code         | 🚀                                                      |
-| preferred pipeline     | by                                                     |
-| reference node         | zaphod                                                 |
-| time to encode 10KB    | 586.9 μs                                               |
-| time to decode to 10KB | 6.962 ms                                               |
-| 'foobar' encodes to    | "\128640\128538\128531\128531\128073\129316\129402"    |
+| essential               | stat                                                   |
+| ----------------------- | ------------------------------------------------------ |
+| codec                   | Base256Emoji                                           |
+| codec home page         | [multibase](https://github.com/multiformats/multibase) |
+| multibase name          | base256emoji                                           |
+| multibase code          | 🚀                                                      |
+| preferred pipeline      | by                                                     |
+| reference node          | zaphod                                                 |
+| time to encode 10 kB    | 887.0 μs                                               |
+| time to decode to 10 kB | 7.671 ms                                               |
+| 'foobar' encodes to     | "\128640\128538\128531\128531\128073\129316\129402"    |
 
 
 ## Codec Overview
@@ -52,7 +52,7 @@ breakdown, attached notes, etc.
 
 ### Key Results
 
-Compiled with GHC 9.4.4 (aarch64), on the **marvin** reference node running macOS 13.2.1 (22D68):
+Compiled with GHC 9.4.4 (x86_64), on the **zaphod** reference node running macOS 13.2.1 (22D68):
 
 * There are no highlighted benchmarks.
 

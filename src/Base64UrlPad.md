@@ -2,17 +2,17 @@
 
 ## Essential Stats
 
-| essential              | stat                                               |
-| ---------------------- | -------------------------------------------------- |
-| codec                  | Base64UrlPad                                       |
-| codec home page        | [RFC 4648](https://www.rfc-editor.org/rfc/rfc4648) |
-| multibase name         | Base64UrlPad                                       |
-| multibase code         | U                                                  |
-| preferred pipeline     | bl                                                 |
-| reference node         | zaphod                                             |
-| time to encode 10KB    | 4.698 μs                                           |
-| time to decode to 10KB | 19.12 μs                                           |
-| 'foobar' encodes to    | "UZm9vYmFy"                                        |
+| essential               | stat                                               |
+| ----------------------- | -------------------------------------------------- |
+| codec                   | Base64UrlPad                                       |
+| codec home page         | [RFC 4648](https://www.rfc-editor.org/rfc/rfc4648) |
+| multibase name          | Base64UrlPad                                       |
+| multibase code          | U                                                  |
+| preferred pipeline      | bl                                                 |
+| reference node          | zaphod                                             |
+| time to encode 10 kB    | 3.298 μs                                           |
+| time to decode to 10 kB | 16.87 μs                                           |
+| 'foobar' encodes to     | "UZm9vYmFy"                                        |
 
 
 ## Codec Overview
@@ -53,7 +53,7 @@ breakdown, attached notes, etc.
 
 ### Key Results
 
-Compiled with GHC 9.4.4 (aarch64), on the **marvin** reference node running macOS 13.2.1 (22D68):
+Compiled with GHC 9.4.4 (x86_64), on the **zaphod** reference node running macOS 13.2.1 (22D68):
 
 * There are no highlighted benchmarks.
 
@@ -63,8 +63,8 @@ The following benchmarks are constrained to run inside the following bounds for 
 
 | benchmark                   | nodes      | current  | bound        |
 | --------------------------- | ---------- | -------- | ------------ |
-| **enc-bl-001MB-Base64UrlP** | **marvin** | 451.7 μs | **485.0 μs** |
-| enc-bl-001MB-Base64UrlP     | zaphod     | 451.7 μs | 352.0 μs     |
+| enc-bl-001MB-Base64UrlP     | marvin     | 309.3 μs | 485.0 μs     |
+| **enc-bl-001MB-Base64UrlP** | **zaphod** | 309.3 μs | **352.0 μs** |
 
 ### Details
 

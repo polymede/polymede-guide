@@ -2,17 +2,17 @@
 
 ## Essential Stats
 
-| essential              | stat                                                                                                                      |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| codec                  | Proquint                                                                                                                  |
-| codec home page        | [A Proposal for Proquints: Identifiers that are Readable, Spellable, and Pronounceable](https://arxiv.org/html/0901.4016) |
-| multibase name         | proquint                                                                                                                  |
-| multibase code         | p                                                                                                                         |
-| preferred pipeline     | by                                                                                                                        |
-| reference node         | zaphod                                                                                                                    |
-| time to encode 10KB    | 694.5 μs                                                                                                                  |
-| time to decode to 10KB | 760.3 μs                                                                                                                  |
-| 'foobar' encodes to    | "pro-kinoz-kutof-kajuf"                                                                                                   |
+| essential               | stat                                                                                                                      |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| codec                   | Proquint                                                                                                                  |
+| codec home page         | [A Proposal for Proquints: Identifiers that are Readable, Spellable, and Pronounceable](https://arxiv.org/html/0901.4016) |
+| multibase name          | proquint                                                                                                                  |
+| multibase code          | p                                                                                                                         |
+| preferred pipeline      | by                                                                                                                        |
+| reference node          | zaphod                                                                                                                    |
+| time to encode 10 kB    | 803.7 μs                                                                                                                  |
+| time to decode to 10 kB | 1.036 ms                                                                                                                  |
+| 'foobar' encodes to     | "pro-kinoz-kutof-kajuf"                                                                                                   |
 
 
 ## Codec Overview
@@ -55,7 +55,7 @@ breakdown, attached notes, etc.
 
 ### Key Results
 
-Compiled with GHC 9.4.4 (aarch64), on the **marvin** reference node running macOS 13.2.1 (22D68):
+Compiled with GHC 9.4.4 (x86_64), on the **zaphod** reference node running macOS 13.2.1 (22D68):
 
 * There are no highlighted benchmarks.
 

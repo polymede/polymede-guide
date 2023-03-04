@@ -1,7 +1,7 @@
 # Summary
 
 - [Overview](./overview.md)
-- [Codecs](./codecs.md)
+- [Codecs](./codec-overview.md)
   - [Base64Pad](./Base64Pad.md)
 - [Notes](./notes.md)
   - [The Six Stream Types](./notes/streams.md)
