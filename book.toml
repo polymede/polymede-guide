@@ -4,3 +4,8 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Polymede"
+
+[output.html]
+
+additional-css = ["theme/criterion.css"]
+additional-js  = ["theme/criterion.js"]

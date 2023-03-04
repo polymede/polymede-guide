@@ -1,18 +1,18 @@
-# Base64Pad
+# Base32PadUpper
 
 ## Essential Stats
 
 | essential              | stat                                               |
 | ---------------------- | -------------------------------------------------- |
-| codec                  | Base64Pad                                          |
+| codec                  | Base32PadUpper                                     |
 | codec home page        | [RFC 4648](https://www.rfc-editor.org/rfc/rfc4648) |
-| multibase name         | base64pad                                          |
-| multibase code         | M                                                  |
+| multibase name         | base32padupper                                     |
+| multibase code         | C                                                  |
 | preferred pipeline     | bl                                                 |
 | reference node         | zaphod                                             |
-| time to encode 10KB    | 4.710 μs                                           |
-| time to decode to 10KB | 19.14 μs                                           |
-| 'foobar' encodes to    | "MZm9vYmFy"                                        |
+| time to encode 10KB    | 10.10 μs                                           |
+| time to decode to 10KB | 15.11 μs                                           |
+| 'foobar' encodes to    | "CMZXW6YTBOI======"                                |
 
 
 ## Codec Overview
@@ -24,7 +24,7 @@ This codec is part of a family of codecs standardised by the IETF in
 
 ## API
 
-The API for this codec is on Hackage at [Data.Multibase.Types.Codecs.Base64Pad](https://hackage.haskell.org/package/polymede-0.0.0.1/docs/Data-Multibase-Types-Codecs-Base64Pad.html).
+The API for this codec is on Hackage at [Data.Multibase.Types.Codecs.Base32PadUpper](https://hackage.haskell.org/package/polymede-0.0.0.1/docs/Data-Multibase-Types-Codecs-Base32PadUpper.html).
 
 ## A Simple Example
 
@@ -32,7 +32,7 @@ This example program shows the codec as a pair of functions: one to encode an oc
 and another to decode the resulting multibase encoding to recover it.
 
 ```haskell
-{{#include ../hs/src/PolymedeSimpleBase64Pad.hs}}
+{{#include ../hs/src/PolymedeSimpleBase32PadUpper.hs}}
 ```
 
 ## A More Realistic Example
@@ -42,13 +42,13 @@ to be in (most likely) a JSON text. This next example shows how this can be done
 JSON API.
 
 ```haskell
-{{#include ../hs/src/PolymedeJSONBase64Pad.hs}}
+{{#include ../hs/src/PolymedeJSONBase32PadUpper.hs}}
 ```
 
 ## Benchmarks
 
 
-This section provides summary information only &mdash; see the [Base64Pad benchmarks](https://cdornan.github.io/polymede-benchmarks/benchmarks/0.0.0.1/Base64Pad.html) for the full
+This section provides summary information only &mdash; see the [Base32PadUpper benchmarks](https://cdornan.github.io/polymede-benchmarks/benchmarks/0.0.0.1/Base32PadUpper.html) for the full
 breakdown, attached notes, etc.
 
 ### Key Results
@@ -61,14 +61,11 @@ Compiled with GHC 9.4.4 (aarch64), on the **marvin** reference node running macO
 
 The following benchmarks are constrained to run inside the following bounds for each release:
 
-| benchmark                | nodes      | current  | bound        |
-| ------------------------ | ---------- | -------- | ------------ |
-| **enc-bl-001MB-Base64P** | **marvin** | 452.7 μs | **485.0 μs** |
-| enc-bl-001MB-Base64P     | zaphod     | 452.7 μs | 352.0 μs     |
+* there are no release constraints for this codec/report
 
 ### Details
 
-See the [Base64Pad benchmarks](https://cdornan.github.io/polymede-benchmarks/benchmarks/0.0.0.1/Base64Pad.html) for the full breakdown, attached notes, etc.
+See the [Base32PadUpper benchmarks](https://cdornan.github.io/polymede-benchmarks/benchmarks/0.0.0.1/Base32PadUpper.html) for the full breakdown, attached notes, etc.
 
 
 ## Remarks on Expected Codec Performance
@@ -82,21 +79,18 @@ Most of the test coverage for this codecs is to be found in the test suite for t
 codec but we do maintain some simple test vectors to ensure basic functionality and ensure that 
 the correct codec has been integrated.
 
-| encoded-input | expected           |
-| ------------- | ------------------ |
-| "M"           | ""                 |
-| "MZg=="       | "f"                |
-| "MZm8="       | "fo"               |
-| "MZm9v"       | "foo"              |
-| "MZm9vYg=="   | "foob"             |
-| "MZm9vYmE="   | "fooba"            |
-| "MZm9vYmFy"   | "foobar"           |
-| "M=eAoeAo="   | **invalid input**  |
-| "Me=AoeAo="   | **invalid input**  |
-| "M=eAoeAo="   | **invalid input**  |
-| "MeAoe=Ao="   | **invalid input**  |
-| "MeAoeA=o="   | **invalid input**  |
-| "MZE=="       | **decode failure** |
+| encoded-input       | expected           |
+| ------------------- | ------------------ |
+| "C"                 | ""                 |
+| "CKN2W4==="         | "Sun"              |
+| "CMY======"         | "f"                |
+| "CMZXQ===="         | "fo"               |
+| "CMZXW6==="         | "foo"              |
+| "CMZXW6YQ="         | "foob"             |
+| "CMZXW6YTB"         | "fooba"            |
+| "CMZXW6YTBOI======" | "foobar"           |
+| "C=CMZXW6==="       | **invalid input**  |
+| "CZE=="             | **decode failure** |
 
 
 In addition to these test vectors we test that the codec can successfully roundtrip a selection of 
@@ -107,5 +101,5 @@ random byte streams.
 The codec tests generate the following output.
 
 ```
-<{{#include ../test/Base64Pad-out.txt}}
+<{{#include ../test/Base32PadUpper-out.txt}}
 ```
